@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab');
+
+$default_color : #0093dd;
+
+
+body 									{ font-family: 'Lato', sans-serif; }
+.back-to-top 							{ background: $default_color; }
+.section-header h3::after 				{ background: $default_color; }
+section 								{ overflow: hidden; }
+section h3  							{ font-family: 'Roboto Slab', serif; letter-spacing: 0.1em;}
+section p 								{ font-size: 18px; }
+p 										{ margin: 0; padding: 0; }
+
+#header 								{ background: rgba(0, 0, 0, 0.24); 
+	#logo 								{
+		h1 								{
+			a 							{ position: relative;  top: -15px; 
+				img 					{ width: 220px; }
+			}
+		}
+	}
+}
+.owl-dot.active 						{ background: $default_color !important; }
+#header 								{
+	#logo 								{
+		h1 								{
+			a, a:hover					{ border: 0;}
+		}
+
+		img 							{ width: 250px; }
+	}
+}
+
+
+.nav-menu 								{
+	li 									{ 
+		&:hover 						{
+			a 							{ color: $default_color; } 
+		}
+
+		  
+	}
+	a 									{ font-family: 'Roboto Slab', serif; letter-spacing: 0.1rem; }
+	.menu-active 						{
+		a 								{ color: $default_color; }
+	}
+}
+
+section#intro 							{
+	.carousel-item						{
+		&::before 						{ background-color: rgba(0,0,0,0.5);  }
+	}
+	h2 									{ text-transform: capitalize; }
+	p 									{ font-size: 23px; }
+	a.btn-get-started 					{ background: $default_color;  
+		&:hover 						{ background: darken($default_color,8%); color: #fff;  }
+	}
+}
+
+
+section#featured-services  				{ display: none;
+	i 									{ color: $default_color; }
+}
+
+section#about 							{ padding: 100px 0;
+	.about-cols 						{ display: none; }
+	.about-col 							{
+		.icon 							{ background-color: $default_color; }
+		&:hover  						{
+			.icon 						{ background-color: $default_color; 
+				i  						{ color: #fff; }
+			}
+		}
+	}
+}
+
+section#facts 							{
+	.counters 							{
+		span 							{ color: $default_color;  }
+	}
+
+	.facts-img 							{ position: relative;  top: 30px; }
+}
+
+
+section#services 						{
+	.icon 								{
+		i 								{  color: $default_color; }
+	}
+	.box:hover 							{
+		.title 							{
+			a 							{ color: $default_color; }
+		}
+	}
+}
+
+section#portfolio 						{
+	#portfolio-flters 					{
+		li 								{ padding: 5px 20px; font-size: 15px; border: 1px #ddd solid; text-transform: capitalize;
+			&.filter-active, &:hover 	{ background-color: $default_color; }
+		}
+	}
+}
+
+section#team 							{
+	.member								{ border-radius: 50%; overflow: hidden;
+		&:hover 						{ 
+			.member-info 				{ background: rgba(0, 147, 221, 0.75); border-radius: 50%;  }
+		}
+
+		.social 						{
+			a 							{
+				&:hover 				{ color: #111; }
+			}
+		}
+	}
+	
+}
+
+section#testimonials 					{
+	.testimonial-item 					{
+		.testimonial-img 				{ border: 2px solid #adadad; }
+	}
+}
+
+section#contact 						{
+	.contact-info 						{ margin-top: 40px;
+		h3 								{ margin-bottom: 5px; }
+		i 								{ color: $default_color; display: inline }
+	}
+
+
+	.form								{
+		button[type=submit] 			{ background: $default_color; width: 100%; display: block;
+			&:hover 					{ background: darken($default_color,5%);  }
+		}
+	}
+}
+
+section#contact 						{ background: linear-gradient(rgba(0, 147, 221, 0.81),rgba(0, 0, 0, 0.95)),url(../img/facts-bg.jpg) fixed center center; background-size: cover; 
+	 
+	.contact-info 						{
+		p, a							{ color: #fff; }
+		a  								{
+			&:hover 					{ color:  $default_color; }
+		}
+	}
+
+	.contact-phone 						{ border-left: 1px solid rgba(255, 255, 255, 0.18); border-right: 1px solid rgba(255, 255, 255, 0.18); } 
+	.form input, .form textarea 		{ background: rgba(255, 255, 255, 0.35); border: 1px rgba(255, 255, 255, 0.15) solid; color: #fff; }
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: rgba(255, 255, 255, 0.65); letter-spacing: 0.03rem;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: rgba(255, 255, 255, 0.65); letter-spacing: 0.03rem;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color:rgba(255, 255, 255, 0.65); letter-spacing: 0.03rem;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: rgba(255, 255, 255, 0.65); letter-spacing: 0.03rem;
+	}
+}
+
+footer#footer 							{  
+	.footer-top 						{
+		.footer-info 					{
+			p 							{ font-size: 13px; line-height: 20px; }
+			h3 							{ border-left: 5px $default_color solid}
+		}
+		.social-links 					{
+			a:hover 					{ background: $default_color; }
+		}
+		h4::after 						{ background: $default_color; }
+	}
+}
+
